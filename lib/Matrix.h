@@ -50,13 +50,13 @@
 			{return X;}
 			type GetColumnLength(void)
 			{return Y;}
-			matrix(int row,int column)
+			matrix(int Row,int Column)
 			{
-				mat.resize(row); 
+				mat.resize(Row); 
 				for(int i=0;i<row;i++)
-         			mat[i].resize(column);
-         		X=row;
-         		Y=column;
+         			mat[i].resize(Column);
+         		X=Row;
+         		Y=Column;
 				
 			}
 //			type** getNomal

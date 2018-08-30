@@ -20,4 +20,5 @@
 		函数type GetColumnLength(void)	得到矩阵的列数
 		
 		析构函数matrix(int row,int column)	定义矩阵大小是Row行Column列
-	2.函数matrix<int> operator+ (matrix<int> A,matrix<int> B)	将矩阵A和矩阵B相加（如不是同型矩阵，会抛出异常0x3f）
+
+	2. 函数matrix<int> operator+ (matrix<int> A,matrix<int> B)	将矩阵A和矩阵B相加（如不是同型矩阵，会抛出异常0x3f）
