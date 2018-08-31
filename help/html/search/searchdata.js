@@ -1,21 +1,18 @@
 var indexSectionsWithContent =
 {
-  0: "gmps",
-  1: "m",
-  2: "gmps"
+  0: "m",
+  1: "m"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "classes",
-  2: "functions"
+  1: "classes"
 };
 
 var indexSectionLabels =
 {
   0: "全部",
-  1: "类",
-  2: "函数"
+  1: "类"
 };
 

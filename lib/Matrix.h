@@ -213,8 +213,17 @@ matrix<type> operator- (matrix<type> A,matrix<tpye> B)
 *         错误时抛出异常0x43
 *         返回它们的积 
 */
-//matrix<type> operator* (matrix<type> A,matrix<tpye> B)
-//{
-//	for(int i=A.)
-//}
+matrix<type> operator* (matrix<type> A,matrix<tpye> B)
+{
+	matrix<type> C; 
+	for(int m=0;m<A.GetRowLength();m++){  
+    	for(int s=0;s<B.GetColumnLength();s++){  
+            C.PutElement(0,m,s);
+            for(int n=0;n<B.GetColumnLength();n++){  
+                C.PutElement(C.GetElement(m,s)+A.GetElement(m,n)*B.GetElement(n,s),m,s);  
+            }  
+        }  
+    }  
+    return C;
+}
 #endif
