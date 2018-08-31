@@ -14,10 +14,7 @@
     <member refid="classmatrix_1a2d0efaa46454804fcf45fae271002cf5" kind="function"><name>matrix</name></member>
   </compound>
   <compound refid="_matrix_8h" kind="file"><name>Matrix.h</name>
-    <member refid="_matrix_8h_1a66543d6ab9e9d0ba6436ce1975df825b" kind="function"><name>operator+</name></member>
-    <member refid="_matrix_8h_1ae7a4808b95e8af4159afe70373cb6cd7" kind="function"><name>operator+</name></member>
-    <member refid="_matrix_8h_1a3299670b18a3d3464f0fa2333331dbd8" kind="function"><name>operator+</name></member>
-    <member refid="_matrix_8h_1a09269701b0102ee7c46b5e10d1be1247" kind="function"><name>operator+</name></member>
-    <member refid="_matrix_8h_1aaa64890f61b9186f059bbd76c6b0023d" kind="function"><name>operator+</name></member>
+    <member refid="_matrix_8h_1a00f9f0d5bdfe77c1e463555227d78476" kind="function"><name>operator+</name></member>
+    <member refid="_matrix_8h_1a2b89ffee6fd71e478c3e888c0395d3e7" kind="function"><name>operator-</name></member>
   </compound>
 </doxygenindex>

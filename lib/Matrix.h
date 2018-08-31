@@ -6,9 +6,10 @@
 *                                                                            *
 *  @author   Mike Liu                                                        *
 *  @email    mike_server@foxmail.com                                         *
-*  @version  1.0.0.0(°æ±¾ºÅ)                                                 *
+*  @version  1.0LTS                                                          *
 *  @date     2018.8.31                                                       *
 *  @license  GNU General Public License (GPL)                                *
+*  It really works!                                                          *
 *                                                                            *
 *----------------------------------------------------------------------------*
 *  Remark         : None                                                     *
@@ -16,7 +17,7 @@
 *  Change History :                                                          *
 *  <Date>     | <Version> | <Author>       | <Description>                   *
 *----------------------------------------------------------------------------*
-*  2018/08/31 | 1.0.0.0   | Mike Liu       | Doxygen test ver                *
+*  2018/08/31 | 1.0LTS    | Mike Liu       | Long Term Support Version 1     *
 *----------------------------------------------------------------------------*
 *                                                                            *
 *****************************************************************************/

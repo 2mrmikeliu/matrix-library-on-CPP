@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="36" column="1" bodyfile="Matrix.h" bodystart="36" bodyend="-1"/>
+        <location file="Matrix.h" line="37" column="1" bodyfile="Matrix.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmatrix_1a31ba60ef2fc066f87242da825af906d5" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="37" column="1" bodyfile="Matrix.h" bodystart="37" bodyend="-1"/>
+        <location file="Matrix.h" line="38" column="1" bodyfile="Matrix.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmatrix_1a937a974fa4b6219dad1c9e5306bb1178" prot="private" static="no" mutable="no">
         <type>vector&lt; vector&lt; type &gt; &gt;</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="38" column="1" bodyfile="Matrix.h" bodystart="38" bodyend="-1"/>
+        <location file="Matrix.h" line="39" column="1" bodyfile="Matrix.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="43" column="1" bodyfile="Matrix.h" bodystart="43" bodyend="54"/>
+        <location file="Matrix.h" line="44" column="1" bodyfile="Matrix.h" bodystart="44" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classmatrix_1a7f2bec444e35753d7225daf48e04e677" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -110,7 +110,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="62" column="1" bodyfile="Matrix.h" bodystart="62" bodyend="70"/>
+        <location file="Matrix.h" line="63" column="1" bodyfile="Matrix.h" bodystart="63" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classmatrix_1a0650c9aa35a3a11b3cf155ce674dddac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -127,7 +127,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="77" column="1" bodyfile="Matrix.h" bodystart="77" bodyend="80"/>
+        <location file="Matrix.h" line="78" column="1" bodyfile="Matrix.h" bodystart="78" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classmatrix_1a483f7ab8c7d5aa28495fb5d9a02d369d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -174,7 +174,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="87" column="1" bodyfile="Matrix.h" bodystart="87" bodyend="90"/>
+        <location file="Matrix.h" line="88" column="1" bodyfile="Matrix.h" bodystart="88" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="classmatrix_1a24b3678b5a1b638006fc8fe0fd9cc457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>type</type>
@@ -211,7 +211,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="100" column="1" bodyfile="Matrix.h" bodystart="100" bodyend="105"/>
+        <location file="Matrix.h" line="101" column="1" bodyfile="Matrix.h" bodystart="101" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classmatrix_1a1db0593aa62235f24143913564382990" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>type</type>
@@ -228,7 +228,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="112" column="1" bodyfile="Matrix.h" bodystart="112" bodyend="115"/>
+        <location file="Matrix.h" line="113" column="1" bodyfile="Matrix.h" bodystart="113" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="classmatrix_1aee9fe31d5065ec906cd0ed908cc127a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>type</type>
@@ -245,7 +245,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="122" column="1" bodyfile="Matrix.h" bodystart="122" bodyend="125"/>
+        <location file="Matrix.h" line="123" column="1" bodyfile="Matrix.h" bodystart="123" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="classmatrix_1a2d0efaa46454804fcf45fae271002cf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -281,14 +281,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Matrix.h" line="132" column="1" bodyfile="Matrix.h" bodystart="132" bodyend="140"/>
+        <location file="Matrix.h" line="133" column="1" bodyfile="Matrix.h" bodystart="133" bodyend="141"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>matrix 矩阵类的简单实现 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Matrix.h" line="34" column="1" bodyfile="Matrix.h" bodystart="33" bodyend="142"/>
+    <location file="Matrix.h" line="35" column="1" bodyfile="Matrix.h" bodystart="34" bodyend="143"/>
     <listofallmembers>
       <member refid="classmatrix_1aee9fe31d5065ec906cd0ed908cc127a1" prot="public" virt="non-virtual"><scope>matrix</scope><name>GetColumnLength</name></member>
       <member refid="classmatrix_1a24b3678b5a1b638006fc8fe0fd9cc457" prot="public" virt="non-virtual"><scope>matrix</scope><name>GetElement</name></member>
