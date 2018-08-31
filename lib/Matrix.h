@@ -149,6 +149,7 @@ class matrix
     *         错误时抛出异常0x41
     *         返回它们的和 
     */
+template<class type>
 matrix<type> operator+ (matrix<type> A,matrix<type> B)
 {
 	matrix<type> C(A.GetRowLength(),A.GetColumnLength());
@@ -175,7 +176,8 @@ matrix<type> operator+ (matrix<type> A,matrix<type> B)
     *         错误时抛出异常0x42 
     *         返回它们的差 
     */
-matrix<type> operator- (matrix<type> A,matrix<tpye> B)
+template<class type>
+matrix<type> operator- (matrix<type> A,matrix<type> B)
 {
 	matrix<type> C(A.GetRowLength(),A.GetColumnLength());
 	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
