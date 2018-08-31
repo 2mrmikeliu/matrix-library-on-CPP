@@ -11,7 +11,7 @@
 *  @license  GNU General Public License (GPL)                                *
 *                                                                            *
 *----------------------------------------------------------------------------*
-*  Remark         : None                                              *
+*  Remark         : None                                                     *
 *----------------------------------------------------------------------------*
 *  Change History :                                                          *
 *  <Date>     | <Version> | <Author>       | <Description>                   *
@@ -140,9 +140,17 @@ class matrix
 		}
 //			type** getNomal
 };
-matrix<int> operator+ (matrix<int> A,matrix<int> B)
+	    /** 
+    * @brief 矩阵加法 
+    *
+    * @param A,B 两个被操作的矩阵 
+    * @return 返回说明
+    *         错误时抛出异常0x41
+    *         返回它们的和 
+    */
+matrix<type> operator+ (matrix<type> A,matrix<type> B)
 {
-	matrix<int> C(A.GetRowLength(),A.GetColumnLength());
+	matrix<type> C(A.GetRowLength(),A.GetColumnLength());
 	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
 		{
 			for(int i=0; i<A.GetColumnLength() ; i++)
@@ -155,117 +163,34 @@ matrix<int> operator+ (matrix<int> A,matrix<int> B)
 	else
 		{
 			std::cout<<std::endl<<"Error : The matrix being manipulated is not a matrix of the same type."<<std::endl<<std::endl;
-			throw 0x3f;
+			throw 0x41;
 		}
 }
-matrix<long> operator+ (matrix<long> A,matrix<long> B)
+	    /** 
+    * @brief 矩阵减法 
+    *
+    * @param A,B 两个被操作的矩阵 
+    * @return 返回说明
+    *         错误时抛出异常0x42 
+    *         返回它们的差 
+    */
+matrix<type> operator- (matrix<type> A,matrix<tpye> B)
 {
-	matrix<long> C(A.GetRowLength(),A.GetColumnLength());
+	matrix<type> C(A.GetRowLength(),A.GetColumnLength());
 	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
 		{
 			for(int i=0; i<A.GetColumnLength() ; i++)
 				for(int j=0; j<A.GetColumnLength() ; j++)
 					{
-						C.PutElement(A.GetElement(i,j)+B.GetElement(i,j),i,j);
+						C.PutElement(A.GetElement(i,j)-B.GetElement(i,j),i,j);
 					}
 			return C;
 		}
 	else
 		{
 			std::cout<<std::endl<<"Error : The matrix being manipulated is not a matrix of the same type."<<std::endl<<std::endl;
-			throw 0x3f;
-		}
-}
-matrix<long long> operator+ (matrix<long> A,matrix<long> B)
-{
-	matrix<int> C(A.GetRowLength(),A.GetColumnLength());
-	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
-		{
-			for(int i=0; i<A.GetColumnLength() ; i++)
-				for(int j=0; j<A.GetColumnLength() ; j++)
-					{
-						C.PutElement(A.GetElement(i,j)+B.GetElement(i,j),i,j);
-					}
-			return C;
-		}
-	else
-		{
-			std::cout<<std::endl<<"Error : The matrix being manipulated is not a matrix of the same type."<<std::endl<<std::endl;
-			throw 0x3f;
-		}
-}
-matrix<unsigned int> operator+ (matrix<unsigned int> A,matrix<unsigned int> B)
-{
-	matrix<unsigned int> C(A.GetRowLength(),A.GetColumnLength());
-	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
-		{
-			for(int i=0; i<A.GetColumnLength() ; i++)
-				for(int j=0; j<A.GetColumnLength() ; j++)
-					{
-						C.PutElement(A.GetElement(i,j)+B.GetElement(i,j),i,j);
-					}
-			return C;
-		}
-	else
-		{
-			std::cout<<std::endl<<"Error : The matrix being manipulated is not a matrix of the same type."<<std::endl<<std::endl;
-			throw 0x3f;
-		}
-}
-matrix<unsigned long long> operator+ (matrix<unsigned long long> A,matrix<unsigned long long> B)
-{
-	matrix<unsigned long long> C(A.GetRowLength(),A.GetColumnLength());
-	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
-		{
-			for(int i=0; i<A.GetColumnLength() ; i++)
-				for(int j=0; j<A.GetColumnLength() ; j++)
-					{
-						C.PutElement(A.GetElement(i,j)+B.GetElement(i,j),i,j);
-					}
-			return C;
-		}
-	else
-		{
-			std::cout<<std::endl<<"Error : The matrix being manipulated is not a matrix of the same type."<<std::endl<<std::endl;
-			throw 0x3f;
+			throw 0x42;
 		}
 }
 
-matrix<float> operator+ (matrix<float> A,matrix<float> B)
-{
-	matrix<float> C(A.GetRowLength(),A.GetColumnLength());
-	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
-		{
-			for(int i=0; i<A.GetColumnLength() ; i++)
-				for(int j=0; j<A.GetColumnLength() ; j++)
-					{
-						C.PutElement(A.GetElement(i,j)+B.GetElement(i,j),i,j);
-					}
-			return C;
-		}
-	else
-		{
-			std::cout<<std::endl<<"Error : The matrix being manipulated is not a matrix of the same type."<<std::endl<<std::endl;
-			throw 0x3f;
-		}
-}
-
-matrix<double> operator+ (matrix<int> A,matrix<int> B)
-{
-	matrix<int> C(A.GetRowLength(),A.GetColumnLength());
-	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
-		{
-			for(int i=0; i<A.GetColumnLength() ; i++)
-				for(int j=0; j<A.GetColumnLength() ; j++)
-					{
-						C.PutElement(A.GetElement(i,j)+B.GetElement(i,j),i,j);
-					}
-			return C;
-		}
-	else
-		{
-			std::cout<<std::endl<<"Error : The matrix being manipulated is not a matrix of the same type."<<std::endl<<std::endl;
-			throw 0x3f;
-		}
-}
 #endif
