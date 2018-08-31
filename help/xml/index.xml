@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="classmatrix" kind="class"><name>matrix</name>
+    <member refid="classmatrix_1ac6aa02969634cbfe5961ad5528e976d5" kind="variable"><name>X</name></member>
+    <member refid="classmatrix_1a31ba60ef2fc066f87242da825af906d5" kind="variable"><name>Y</name></member>
+    <member refid="classmatrix_1a937a974fa4b6219dad1c9e5306bb1178" kind="variable"><name>mat</name></member>
+    <member refid="classmatrix_1a1536b75646af71d28be7247a3f0ee16f" kind="function"><name>PrintFormat</name></member>
+    <member refid="classmatrix_1a7f2bec444e35753d7225daf48e04e677" kind="function"><name>PutArray</name></member>
+    <member refid="classmatrix_1a0650c9aa35a3a11b3cf155ce674dddac" kind="function"><name>size</name></member>
+    <member refid="classmatrix_1a483f7ab8c7d5aa28495fb5d9a02d369d" kind="function"><name>PutElement</name></member>
+    <member refid="classmatrix_1a24b3678b5a1b638006fc8fe0fd9cc457" kind="function"><name>GetElement</name></member>
+    <member refid="classmatrix_1a1db0593aa62235f24143913564382990" kind="function"><name>GetRowLength</name></member>
+    <member refid="classmatrix_1aee9fe31d5065ec906cd0ed908cc127a1" kind="function"><name>GetColumnLength</name></member>
+    <member refid="classmatrix_1a2d0efaa46454804fcf45fae271002cf5" kind="function"><name>matrix</name></member>
+  </compound>
+  <compound refid="_matrix_8h" kind="file"><name>Matrix.h</name>
+    <member refid="_matrix_8h_1a66543d6ab9e9d0ba6436ce1975df825b" kind="function"><name>operator+</name></member>
+    <member refid="_matrix_8h_1ae7a4808b95e8af4159afe70373cb6cd7" kind="function"><name>operator+</name></member>
+    <member refid="_matrix_8h_1a3299670b18a3d3464f0fa2333331dbd8" kind="function"><name>operator+</name></member>
+    <member refid="_matrix_8h_1a09269701b0102ee7c46b5e10d1be1247" kind="function"><name>operator+</name></member>
+    <member refid="_matrix_8h_1aaa64890f61b9186f059bbd76c6b0023d" kind="function"><name>operator+</name></member>
+  </compound>
+</doxygenindex>
