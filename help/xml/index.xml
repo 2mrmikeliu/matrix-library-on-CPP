@@ -4,22 +4,21 @@
     <member refid="classmatrix_1ac6aa02969634cbfe5961ad5528e976d5" kind="variable"><name>X</name></member>
     <member refid="classmatrix_1a31ba60ef2fc066f87242da825af906d5" kind="variable"><name>Y</name></member>
     <member refid="classmatrix_1a937a974fa4b6219dad1c9e5306bb1178" kind="variable"><name>mat</name></member>
+    <member refid="classmatrix_1a047ea31ba5316a00c80d2db118433d6c" kind="variable"><name>ModValue</name></member>
+    <member refid="classmatrix_1a1536b75646af71d28be7247a3f0ee16f" kind="function"><name>PrintFormat</name></member>
+    <member refid="classmatrix_1a7f2bec444e35753d7225daf48e04e677" kind="function"><name>PutArray</name></member>
+    <member refid="classmatrix_1a0650c9aa35a3a11b3cf155ce674dddac" kind="function"><name>size</name></member>
+    <member refid="classmatrix_1a483f7ab8c7d5aa28495fb5d9a02d369d" kind="function"><name>PutElement</name></member>
+    <member refid="classmatrix_1a24b3678b5a1b638006fc8fe0fd9cc457" kind="function"><name>GetElement</name></member>
+    <member refid="classmatrix_1a1db0593aa62235f24143913564382990" kind="function"><name>GetRowLength</name></member>
+    <member refid="classmatrix_1aee9fe31d5065ec906cd0ed908cc127a1" kind="function"><name>GetColumnLength</name></member>
+    <member refid="classmatrix_1a2d0efaa46454804fcf45fae271002cf5" kind="function"><name>matrix</name></member>
   </compound>
   <compound refid="_matrix_8h" kind="file"><name>Matrix.h</name>
-    <member refid="_matrix_8h_1a80c0944640e62d3ed6c5419c1bcc0c88" kind="variable"><name>X</name></member>
-    <member refid="_matrix_8h_1aa482c4cc86a24474e4fb19b5b5978778" kind="variable"><name>Y</name></member>
-    <member refid="_matrix_8h_1a624617cbff465dbf111c97cef22bd79e" kind="variable"><name>mat</name></member>
-    <member refid="_matrix_8h_1a3597ec872c96377b68901a067b9efc53" kind="function"><name>PrintFormat</name></member>
-    <member refid="_matrix_8h_1a76896e68cbfa7849ff0d6c7d257ad4ca" kind="function"><name>PutArray</name></member>
-    <member refid="_matrix_8h_1a48235b1779b4da6de594768aba4b82f8" kind="function"><name>size</name></member>
-    <member refid="_matrix_8h_1a7f2be31d0e91641a27d5237a0530a79a" kind="function"><name>PutElement</name></member>
-    <member refid="_matrix_8h_1a84e4a6f2b8203b46ab711db59a5e442c" kind="function"><name>GetElement</name></member>
-    <member refid="_matrix_8h_1ac5e4ceeed105d65144d0f79ac2ce26dd" kind="function"><name>GetRowLength</name></member>
-    <member refid="_matrix_8h_1a29ac1d0a5b4adf9480b35caecd50d780" kind="function"><name>GetColumnLength</name></member>
-    <member refid="_matrix_8h_1a7a7502617f07ad58542e147f2866a511" kind="function"><name>matrix</name></member>
-    <member refid="_matrix_8h_1ae9a05b5c113a5308a055747c4ccb4a6c" kind="function"><name>operator^</name></member>
-    <member refid="_matrix_8h_1a00f9f0d5bdfe77c1e463555227d78476" kind="function"><name>operator+</name></member>
-    <member refid="_matrix_8h_1a2b89ffee6fd71e478c3e888c0395d3e7" kind="function"><name>operator-</name></member>
-    <member refid="_matrix_8h_1a87f86488851b0aad894082bcb9145582" kind="function"><name>operator*</name></member>
+    <member refid="_matrix_8h_1a0a5bae11396599e016616a51625df36f" kind="function"><name>operator^</name></member>
+    <member refid="_matrix_8h_1a53ec6d8c397f876ebbc6335f39f63c89" kind="function"><name>operator+</name></member>
+    <member refid="_matrix_8h_1a1ec6549dcdc25def26588bd7e4641696" kind="function"><name>operator-</name></member>
+    <member refid="_matrix_8h_1ac6bd1764f6e4dc3baddfd661c05eec10" kind="function"><name>operator*</name></member>
+    <member refid="_matrix_8h_1a7f4a00ac4822503ff1405aae8d808e05" kind="function"><name>operator^</name></member>
   </compound>
 </doxygenindex>

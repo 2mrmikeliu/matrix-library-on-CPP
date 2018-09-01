@@ -51,13 +51,270 @@
         <location file="Matrix.h" line="38" column="1" bodyfile="Matrix.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmatrix_1a047ea31ba5316a00c80d2db118433d6c" prot="public" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long matrix&lt; type &gt;::ModValue</definition>
+        <argsstring></argsstring>
+        <name>ModValue</name>
+        <briefdescription>
+<para>快速幂模数值 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="43" column="1" bodyfile="Matrix.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmatrix_1a1536b75646af71d28be7247a3f0ee16f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix&lt; type &gt;::PrintFormat</definition>
+        <argsstring>()</argsstring>
+        <name>PrintFormat</name>
+        <briefdescription>
+<para>按矩阵格式输出 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="47" column="1" bodyfile="Matrix.h" bodystart="47" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix_1a7f2bec444e35753d7225daf48e04e677" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix&lt; type &gt;::PutArray</definition>
+        <argsstring>(type **Array, int Row, int Column)</argsstring>
+        <name>PutArray</name>
+        <param>
+          <type>type **</type>
+          <declname>Array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Column</declname>
+        </param>
+        <briefdescription>
+<para>将二维数组转化为矩阵 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>一个二维数组的指针 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>二维数组的行数 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>二维数组的列数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="66" column="1" bodyfile="Matrix.h" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix_1a0650c9aa35a3a11b3cf155ce674dddac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int matrix&lt; type &gt;::size</definition>
+        <argsstring>(void)</argsstring>
+        <name>size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>取矩阵大小 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>返回说明 返回矩阵大小Row*Column </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="81" column="1" bodyfile="Matrix.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix_1a483f7ab8c7d5aa28495fb5d9a02d369d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix&lt; type &gt;::PutElement</definition>
+        <argsstring>(type Data, int Row, int Column)</argsstring>
+        <name>PutElement</name>
+        <param>
+          <type>type</type>
+          <declname>Data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Column</declname>
+        </param>
+        <briefdescription>
+<para>将矩阵中的一个元素替换 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>欲放入矩阵的变量 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>放入的行数 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>放入的列数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="91" column="1" bodyfile="Matrix.h" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix_1a24b3678b5a1b638006fc8fe0fd9cc457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>type</type>
+        <definition>type matrix&lt; type &gt;::GetElement</definition>
+        <argsstring>(int Row, int Column)</argsstring>
+        <name>GetElement</name>
+        <param>
+          <type>int</type>
+          <declname>Row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Column</declname>
+        </param>
+        <briefdescription>
+<para>得到矩阵的某个元素 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>矩阵行数 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>矩阵列数</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回说明 错误时抛出异常0x40 返回mat的Row行Column列元素 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="104" column="1" bodyfile="Matrix.h" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix_1a1db0593aa62235f24143913564382990" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>type</type>
+        <definition>type matrix&lt; type &gt;::GetRowLength</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetRowLength</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>得到矩阵的行数 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>返回说明 返回矩阵的行数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="116" column="1" bodyfile="Matrix.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix_1aee9fe31d5065ec906cd0ed908cc127a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>type</type>
+        <definition>type matrix&lt; type &gt;::GetColumnLength</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetColumnLength</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>得到矩阵的列数 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>返回说明 返回矩阵的列数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="126" column="1" bodyfile="Matrix.h" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix_1a2d0efaa46454804fcf45fae271002cf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>matrix&lt; type &gt;::matrix</definition>
+        <argsstring>(int Row, int Column)</argsstring>
+        <name>matrix</name>
+        <param>
+          <type>int</type>
+          <declname>Row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Column</declname>
+        </param>
+        <briefdescription>
+<para>析构函数 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>初始化矩阵行数 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>初始化矩阵列数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Matrix.h" line="136" column="1" bodyfile="Matrix.h" bodystart="136" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
 <para>matrix 矩阵类的简单实现 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Matrix.h" line="34" column="1" bodyfile="Matrix.h" bodystart="33" bodyend="39"/>
+    <location file="Matrix.h" line="34" column="1" bodyfile="Matrix.h" bodystart="33" bodyend="145"/>
     <listofallmembers>
+      <member refid="classmatrix_1aee9fe31d5065ec906cd0ed908cc127a1" prot="public" virt="non-virtual"><scope>matrix</scope><name>GetColumnLength</name></member>
+      <member refid="classmatrix_1a24b3678b5a1b638006fc8fe0fd9cc457" prot="public" virt="non-virtual"><scope>matrix</scope><name>GetElement</name></member>
+      <member refid="classmatrix_1a1db0593aa62235f24143913564382990" prot="public" virt="non-virtual"><scope>matrix</scope><name>GetRowLength</name></member>
       <member refid="classmatrix_1a937a974fa4b6219dad1c9e5306bb1178" prot="private" virt="non-virtual"><scope>matrix</scope><name>mat</name></member>
+      <member refid="classmatrix_1a2d0efaa46454804fcf45fae271002cf5" prot="public" virt="non-virtual"><scope>matrix</scope><name>matrix</name></member>
+      <member refid="classmatrix_1a047ea31ba5316a00c80d2db118433d6c" prot="public" virt="non-virtual"><scope>matrix</scope><name>ModValue</name></member>
+      <member refid="classmatrix_1a1536b75646af71d28be7247a3f0ee16f" prot="public" virt="non-virtual"><scope>matrix</scope><name>PrintFormat</name></member>
+      <member refid="classmatrix_1a7f2bec444e35753d7225daf48e04e677" prot="public" virt="non-virtual"><scope>matrix</scope><name>PutArray</name></member>
+      <member refid="classmatrix_1a483f7ab8c7d5aa28495fb5d9a02d369d" prot="public" virt="non-virtual"><scope>matrix</scope><name>PutElement</name></member>
+      <member refid="classmatrix_1a0650c9aa35a3a11b3cf155ce674dddac" prot="public" virt="non-virtual"><scope>matrix</scope><name>size</name></member>
       <member refid="classmatrix_1ac6aa02969634cbfe5961ad5528e976d5" prot="private" virt="non-virtual"><scope>matrix</scope><name>X</name></member>
       <member refid="classmatrix_1a31ba60ef2fc066f87242da825af906d5" prot="private" virt="non-virtual"><scope>matrix</scope><name>Y</name></member>
     </listofallmembers>

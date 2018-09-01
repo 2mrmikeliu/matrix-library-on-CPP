@@ -6,7 +6,7 @@
 *                                                                            *
 *  @author   Mike Liu                                                        *
 *  @email    mike_server@foxmail.com                                         *
-*  @version  1.0.0.0(版本号)                                                 *
+*  @version  1.0                                                             *
 *  @date     2018.8.31                                                       *
 *  @license  GNU General Public License (GPL)                                *
 *                                                                            *
@@ -16,7 +16,7 @@
 *  Change History :                                                          *
 *  <Date>     | <Version> | <Author>       | <Description>                   *
 *----------------------------------------------------------------------------*
-*  2018/08/31 | 1.0.0.0   | Mike Liu       | Doxygen test ver                *
+*  2018/08/31 | 1.0       | Mike Liu       | 完成矩阵基本操作（除了转置）    *
 *----------------------------------------------------------------------------*
 *                                                                            *
 *****************************************************************************/
@@ -37,6 +37,10 @@ class matrix
 		int Y;
 		vector< vector< type > > mat;
 public:
+/**
+* @brief 快速幂模数值
+*/ 
+unsigned long long ModValue;
 /**
 * @brief 按矩阵格式输出
 */
@@ -138,7 +142,6 @@ matrix(int Row,int Column)
 	Y=Column;
 
 }
-//			type** getNomal
 };
 template<class type>
 type operator^(type A, type B)
@@ -235,24 +238,25 @@ matrix<type> operator* (matrix<type> A,matrix<type> B)
 * @param A 被操作的矩阵
 * @param B 指数 
 * @return 返回说明
-*         错误时抛出异常0x43
 *         返回它们的积 
 */
 template<class type,class p>
 matrix<type> operator^ (matrix<type> A,p B)
 {
-	matrix<type> C; 
+	matrix<type> C(A.GetRowLength(),A.GetColumnLength()); 
 	for(int i=0;i<B;i++)
 	{
 	for(int m=0;m<A.GetRowLength();m++){  
     	for(int s=0;s<A.GetColumnLength();s++){  
             C.PutElement(0,m,s);
             for(int n=0;n<A.GetColumnLength();n++){  
-                C.PutElement(C.GetElement(m,s)+A.GetElement(m,n)*B.GetElement(n,s),m,s);  
+                C.PutElement(C.GetElement(m,s)%A.ModValue+A.GetElement(m,n)%A.ModValue*A.GetElement(n,s)%A.ModValue,m,s);  
             }  
         }  
 	}
+	A=C;
 	}
     return C;
 }
+
 #endif

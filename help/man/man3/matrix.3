@@ -1,4 +1,4 @@
-.TH "matrix< type >" 3 "2018年 八月 31日 星期五" "Version 1.0" "matrix library" \" -*- nroff -*-
+.TH "matrix< type >" 3 "2018年 九月 1日 星期六" "Version 1.0" "matrix library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -9,6 +9,50 @@ matrix< type > \- matrix 矩阵类的简单实现
 .PP
 .PP
 \fC#include <Matrix\&.h>\fP
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "void \fBPrintFormat\fP ()"
+.br
+.RI "按矩阵格式输出 "
+.ti -1c
+.RI "void \fBPutArray\fP (type **Array, int Row, int Column)"
+.br
+.RI "将二维数组转化为矩阵 "
+.ti -1c
+.RI "int \fBsize\fP (void)"
+.br
+.RI "取矩阵大小 "
+.ti -1c
+.RI "void \fBPutElement\fP (type Data, int Row, int Column)"
+.br
+.RI "将矩阵中的一个元素替换 "
+.ti -1c
+.RI "type \fBGetElement\fP (int Row, int Column)"
+.br
+.RI "得到矩阵的某个元素 "
+.ti -1c
+.RI "type \fBGetRowLength\fP (void)"
+.br
+.RI "得到矩阵的行数 "
+.ti -1c
+.RI "type \fBGetColumnLength\fP (void)"
+.br
+.RI "得到矩阵的列数 "
+.ti -1c
+.RI "\fBmatrix\fP (int Row, int Column)"
+.br
+.RI "析构函数 "
+.in -1c
+.SS "Public 属性"
+
+.in +1c
+.ti -1c
+.RI "unsigned long long \fBModValue\fP"
+.br
+.RI "快速幂模数值 "
+.in -1c
 .SH "详细描述"
 .PP 
 
@@ -16,6 +60,104 @@ matrix< type > \- matrix 矩阵类的简单实现
 .br
 class matrix< type >"
 matrix 矩阵类的简单实现 
+.SH "构造及析构函数说明"
+.PP 
+.SS "template<class type> \fBmatrix\fP< type >::\fBmatrix\fP (int Row, int Column)\fC [inline]\fP"
+
+.PP
+析构函数 
+.PP
+\fB参数:\fP
+.RS 4
+\fIRow\fP 初始化矩阵行数 
+.br
+\fIColumn\fP 初始化矩阵列数 
+.RE
+.PP
+
+.SH "成员函数说明"
+.PP 
+.SS "template<class type> type \fBmatrix\fP< type >::GetColumnLength (void)\fC [inline]\fP"
+
+.PP
+得到矩阵的列数 
+.PP
+\fB返回:\fP
+.RS 4
+返回说明 返回矩阵的列数 
+.RE
+.PP
+
+.SS "template<class type> type \fBmatrix\fP< type >::GetElement (int Row, int Column)\fC [inline]\fP"
+
+.PP
+得到矩阵的某个元素 
+.PP
+\fB参数:\fP
+.RS 4
+\fIRow\fP 矩阵行数 
+.br
+\fIColumn\fP 矩阵列数
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+返回说明 错误时抛出异常0x40 返回mat的Row行Column列元素 
+.RE
+.PP
+
+.SS "template<class type> type \fBmatrix\fP< type >::GetRowLength (void)\fC [inline]\fP"
+
+.PP
+得到矩阵的行数 
+.PP
+\fB返回:\fP
+.RS 4
+返回说明 返回矩阵的行数 
+.RE
+.PP
+
+.SS "template<class type> void \fBmatrix\fP< type >::PutArray (type ** Array, int Row, int Column)\fC [inline]\fP"
+
+.PP
+将二维数组转化为矩阵 
+.PP
+\fB参数:\fP
+.RS 4
+\fIArray\fP 一个二维数组的指针 
+.br
+\fIRow\fP 二维数组的行数 
+.br
+\fIColumn\fP 二维数组的列数 
+.RE
+.PP
+
+.SS "template<class type> void \fBmatrix\fP< type >::PutElement (type Data, int Row, int Column)\fC [inline]\fP"
+
+.PP
+将矩阵中的一个元素替换 
+.PP
+\fB参数:\fP
+.RS 4
+\fIData\fP 欲放入矩阵的变量 
+.br
+\fIRow\fP 放入的行数 
+.br
+\fIColumn\fP 放入的列数 
+.RE
+.PP
+
+.SS "template<class type> int \fBmatrix\fP< type >::size (void)\fC [inline]\fP"
+
+.PP
+取矩阵大小 
+.PP
+\fB返回:\fP
+.RS 4
+返回说明 返回矩阵大小Row*Column 
+.RE
+.PP
+
 
 .SH "作者"
 .PP 
