@@ -36,7 +36,6 @@ class matrix
 		int X;
 		int Y;
 		vector< vector< type > > mat;
-}
 public:
 /**
 * @brief 按矩阵格式输出
@@ -101,7 +100,7 @@ void PutElement(type Data,int Row,int Column)
 type GetElement(int Row,int Column)
 {
 	if((Row>=X||Column>=Y)||(Row<0||Column<0))
-		threw 0x40;
+		throw 0x40;
 	return mat[Row][Column];
 }
 /**
@@ -133,7 +132,7 @@ type GetColumnLength(void)
 matrix(int Row,int Column)
 {
 	mat.resize(Row);
-	for(int i=0; i<row; i++)
+	for(int i=0; i<Row; i++)
 		mat[i].resize(Column);
 	X=Row;
 	Y=Column;
@@ -141,6 +140,7 @@ matrix(int Row,int Column)
 }
 //			type** getNomal
 };
+template<class type>
 type operator^(type A, type B)
 {
 	int Ans = 1, Base = A;
@@ -151,7 +151,7 @@ type operator^(type A, type B)
 			Base *= Base;
 			B >>= 1;
 		}
-	return ans;
+	return Ans;
 };
 /**
 * @brief 矩阵加法
@@ -161,6 +161,7 @@ type operator^(type A, type B)
 *         错误时抛出异常0x41
 *         返回它们的和
 */
+template<class type>
 matrix<type> operator+ (matrix<type> A,matrix<type> B)
 {
 	matrix<type> C(A.GetRowLength(),A.GetColumnLength());
@@ -187,7 +188,8 @@ matrix<type> operator+ (matrix<type> A,matrix<type> B)
 *         错误时抛出异常0x42
 *         返回它们的差
 */
-matrix<type> operator- (matrix<type> A,matrix<tpye> B)
+template<class type>
+matrix<type> operator- (matrix<type> A,matrix<type> B)
 {
 	matrix<type> C(A.GetRowLength(),A.GetColumnLength());
 	if(A.GetColumnLength()==B.GetColumnLength()&&A.GetRowLength()==B.GetRowLength())
@@ -213,9 +215,10 @@ matrix<type> operator- (matrix<type> A,matrix<tpye> B)
 *         错误时抛出异常0x43
 *         返回它们的积 
 */
-matrix<type> operator* (matrix<type> A,matrix<tpye> B)
+template<class type>
+matrix<type> operator* (matrix<type> A,matrix<type> B)
 {
-	matrix<type> C; 
+	matrix<type> C(A.GetRowLength(),B.GetColumnLength()); 
 	for(int m=0;m<A.GetRowLength();m++){  
     	for(int s=0;s<B.GetColumnLength();s++){  
             C.PutElement(0,m,s);
@@ -224,6 +227,32 @@ matrix<type> operator* (matrix<type> A,matrix<tpye> B)
             }  
         }  
     }  
+    return C;
+}
+/**
+* @brief 矩阵快速幂 
+*
+* @param A 被操作的矩阵
+* @param B 指数 
+* @return 返回说明
+*         错误时抛出异常0x43
+*         返回它们的积 
+*/
+template<class type,class p>
+matrix<type> operator^ (matrix<type> A,p B)
+{
+	matrix<type> C; 
+	for(int i=0;i<B;i++)
+	{
+	for(int m=0;m<A.GetRowLength();m++){  
+    	for(int s=0;s<A.GetColumnLength();s++){  
+            C.PutElement(0,m,s);
+            for(int n=0;n<A.GetColumnLength();n++){  
+                C.PutElement(C.GetElement(m,s)+A.GetElement(m,n)*B.GetElement(n,s),m,s);  
+            }  
+        }  
+	}
+	}
     return C;
 }
 #endif
